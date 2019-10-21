@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Siteadmin.master.cs" Inherits="pijakitani2.admin.Siteadmin" %>
+
+<!DOCTYPE html>
+<html>
+
+<head runat="server">
+<title>
+    <!-- This is where the title dhould be -->
+    <asp:ContentPlaceHolder ID="TitlePlaceHolder" runat="server">
+        Travel Accessories
+    </asp:ContentPlaceHolder>
+</title>
+<link href="StyleSheet1.css" rel="stylesheet" type="text/css">
+
+     <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+<div id="page">
+<div id="header">
+<h1>
+    <!-- Heading text -->
+    <asp:ContentPlaceHolder ID="HeadingPlaceHolder" runat="server">
+        Travel Accessories
+    </asp:ContentPlaceHolder>
+</h1>
+ 
+
+</div>
+
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+        <h2>Admin</h2>
+      <a href="add.aspx">Add Product</a>
+      <a href="default.aspx">Home Admin</a>
+    </div>
+  </div>
+</div>
+    <asp:ContentPlaceHolder ID="bigimages" runat="server">
+    </asp:ContentPlaceHolder>
+<div id="content">
+    <!-- Content Writeup -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentDetail" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentDetail1" runat="server">
+    </asp:ContentPlaceHolder>
+
+</form>
+
+</body>
+
+</html>
